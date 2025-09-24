@@ -251,7 +251,7 @@
         <li>The Virtual Art Department (VAD) creates digital environments.</li>
         <li>Directors, DPs, and gaffers juggle both worlds without a single shared space.</li>
       </ul>
-      <p>Collaboration relies on <strong>static artifacts</strong>—images, PDFs, video clips—that lose crucial context such as:</p>
+      <p>Collaboration relies on <strong>static artifacts</strong>: images, PDFs, video clips that lose crucial context such as:</p>
       <ul style="list-style-type:disc; margin-left:1.5rem;">
         <li>Set alignment</li>
         <li>Camera motion and rig reach</li>
@@ -259,12 +259,35 @@
         <li>Precise measurements</li>
       </ul>
       <p>
-        This siloed process leads to <strong>plan–execution drift</strong>, costly rework, and slower decision-making.
-      </p>
+        This siloed process leads to <strong>plan to execution drift</strong>, costly rework, and slower decision-making.
+      </p><br>
+
+      
+      <h3 class="title is-4">Key Directions (Distilled)</h3>
+      <ul style="list-style-type:disc; margin-left:1.5rem;">
+        <li><strong>Role Aware Collaboration:</strong> Views, tools, and permissions tailored to Director, DP, Gaffer, VAD and Art roles across all pipeline stages.</li>
+        <li><strong>Physical/Digital Parity:</strong> Keep physical assets and their digital twins perfectly mirrored so changes in one context instantly appear in the other.</li>
+        <li><strong>Shared State &amp; Provenance:</strong> Maintain a single, restorable planning state with timestamps, authorship, and rationale supporting snapshots, versioning and comparison.</li>
+        <li><strong>Live Safety &amp; Feasibility Intelligence:</strong> Provide real-time path clearance checks, collision heatmaps and rig-reach warnings before costly on-set issues occur.</li>
+      </ul><br>
+
+      <h3 class="title is-4">Next Steps</h3>
+      <ul style="list-style-type:disc; margin-left:1.5rem;">
+        <li><strong>Iterative development &amp; evaluation:</strong> Refine the Unreal plugin, integrate advanced constraint checks and telemetry, and run large-scale studies to measure how collaborative MR planning closes the gap between physical and virtual elements.</li>
+        <li><strong>Production deployment:</strong> Validate the framework in live projects at the Virtual Production Institute.</li>
+        <li><strong>Classroom role based training:</strong> Adapt the tools so students can practice collaborative planning when LED stages are busy or inaccessible.</li>
+        <li><strong>Community release:</strong> Package the framework as an Unreal plugin so studios can create digital twins of their own facilities by entering equipment specifications or using integrated 3D scanning; future research will explore automatic twin generation from images or video.</li>
+      </ul>
+
+    </div>
+
+
+    <!-- Right Column -->
+    <div class="column">
 
       <h3 class="title is-4">Motivation</h3>
       <ul style="list-style-type:disc; margin-left:1.5rem;">
-        <li>Provide a <strong>shared, context-rich planning space</strong> where all departments can collaborate in real time.</li>
+        <li>Provide a <strong>shared, context rich planning space</strong> where all departments can collaborate in real time.</li>
         <li>Preserve <strong>spatial and temporal accuracy</strong> from Previz through on-set stages.</li>
         <li>Align physical and virtual planning to <strong>reduce delays and costs</strong>.</li>
         <li>Support both <strong>live (synchronous)</strong> and <strong>remote (asynchronous)</strong> collaboration.</li>
@@ -273,47 +296,34 @@
       <h3 class="title is-4">Our Approach</h3>
       <ul style="list-style-type:disc; margin-left:1.5rem;">
         <li>Build a <strong>Mixed-Reality (MR) Digital Twin Framework</strong> inside Unreal Engine.</li>
-        <li>Extend <strong>Virtual Scouting</strong> and <strong>Multi-User Editing</strong> plugins with native MR passthrough and rich runtime interactions.</li>
-        <li>Overlay <strong>true-scale or desk-scale digital twins</strong> of LED volumes, cameras, lighting gear, props, and motion-captured actors directly in the real environment.</li>
-        <li>Enable every department to <strong>see, edit, and validate the same evolving plan</strong>—what is physical for one team becomes a faithful digital twin for another.</li>
+        <li>Extend <strong>Virtual Scouting</strong> and <strong>Multi User Editing</strong> plugins with native MR passthrough and rich runtime interactions.</li>
+        <li>Overlay <strong>true scale or desk scale digital twins</strong> of LED volumes, cameras, lighting gear, props, and motion-captured actors directly in the real environment.</li>
+        <li>Enable every department to <strong>see, edit, and validate the same evolving plan</strong>, what is physical for one team becomes a faithful digital twin for another.</li>
         <li>Developed with feedback from <strong>Hollywood and commercial VP professionals</strong>, including supervisors and DPs with credits such as <em>The Mandalorian</em>.</li>
         <li>Demonstrated in a <strong>multi-user pilot</strong> on an LED stage using Meta Quest 3 headsets for collaborative, in-situ planning.</li>
-      </ul>
-
-      <h3 class="title is-4">Key Directions (Distilled)</h3>
-      <ul style="list-style-type:disc; margin-left:1.5rem;">
-        <li><strong>Role-Aware Collaboration:</strong> Views, tools, and permissions tailored to Director, DP, Gaffer, VAD and Art roles across all pipeline stages.</li>
-        <li><strong>Physical–Digital Parity:</strong> Keep physical assets and their digital twins perfectly mirrored so changes in one context instantly appear in the other.</li>
-        <li><strong>Shared State &amp; Provenance:</strong> Maintain a single, restorable planning state with timestamps, authorship, and rationale—supporting snapshots, versioning and comparison.</li>
-        <li><strong>Live Safety &amp; Feasibility Intelligence:</strong> Provide real-time path-clearance checks, collision heatmaps and rig-reach warnings before costly on-set issues occur.</li>
-      </ul>
-
-    </div>
-
-    <!-- Right Column -->
-    <div class="column">
+      </ul><br>
 
       <h3 class="title is-4">Key Features</h3>
       <ul style="list-style-type:disc; margin-left:1.5rem;">
         <li>
-          <strong>Unreal-Native Mixed Reality Passthrough:</strong>
+          <strong>Unreal Native Mixed Reality Passthrough:</strong>
           Bring digital twins—such as LED stages or camera rigs—into any physical space, or place physical elements inside a virtual scene.
-          Scale from desk-size miniatures to full-stage rehearsals without re-authoring assets.<br>
+          Scale from desk size miniatures to full stage rehearsals without re-authoring assets.<br>
           <em>Example:</em> A director previews a miniature LED stage remotely, then walks onto the actual stage to rehearse the same setup in MR.
         </li>
         <li>
-          <strong>Layered Digital-Twin Stages:</strong>
+          <strong>Layered Digital Twin Stages:</strong>
           Toggle layers for context-specific visualizations: safety zones, rig reach limits, camera paths, animation curves and metadata overlays.
           Visual styles include PBR, schematic shading, gridded overlays, and color-coded Techviz (yellow/blue for practical vs. virtual).<br>
           <em>Example:</em> A DP enables the camera path and rig-reach layers to ensure a planned crane shot clears LED walls.
         </li>
         <li>
-          <strong>Modular Physical–Virtual Substitution:</strong>
+          <strong>Modular Physical Virtual Substitution:</strong>
           Replace or mix individual components—stands, lights, set pieces—between real and virtual worlds.<br>
           <em>Example:</em> A gaffer tests a real C-stand while positioning a virtual light with accurate photometrics.
         </li>
         <li>
-          <strong>Role-Aware Tools &amp; Pipeline-Stage Interactions:</strong>
+          <strong>Role Aware Tools &amp; Pipeline Stage Interactions:</strong>
           Views, permissions and visual layers automatically adapt to user roles (Director, DP, Gaffer, VAD, Art) and production stages (Previz, Techviz, Stuntviz, Pre-light, On-set).<br>
           <em>Example:</em> A director plans blocking on a desk-scale model, then switches to room-scale MR to review actor motion and parallax; a VAD artist toggles to Techviz mode to inspect camera paths and decide what should be practical versus virtual.
         </li>
@@ -331,7 +341,7 @@
         <li>
           <strong>Versions, Variants &amp; Pre-Configured Kits:</strong>
           Branch and merge scene or shot versions, compare differences by layer, and promote approved elements to the master plan.
-          Load pre-configured kits—for example, a 6×3 LED bay or a full Techviz stunt rig—for instant side-by-side comparison.<br>
+          Load pre-configured kits, for example, a 6×3 LED bay or a full Techviz stunt rig—for instant side-by-side comparison.<br>
           <em>Example:</em> The production designer toggles between day and night lighting plans in seconds.
         </li>
         <li>
@@ -345,14 +355,6 @@
           Build digital twins of ICVFX equipment by entering specs and dimensions, or capture props and sets using mobile photogrammetry.<br>
           <em>Example:</em> The art team scans a practical tree prop and drops it into the MR workspace to check shadow placement before construction.
         </li>
-      </ul>
-
-      <h3 class="title is-4">Next Steps</h3>
-      <ul style="list-style-type:disc; margin-left:1.5rem;">
-        <li><strong>Iterative development &amp; evaluation:</strong> Refine the Unreal plugin, integrate advanced constraint checks and telemetry, and run large-scale studies to measure how collaborative MR planning closes the gap between physical and virtual elements.</li>
-        <li><strong>Production deployment:</strong> Validate the framework in live projects at the Virtual Production Institute.</li>
-        <li><strong>Classroom role-based training:</strong> Adapt the tools so students can practice collaborative planning when LED stages are busy or inaccessible.</li>
-        <li><strong>Community release:</strong> Package the framework as an Unreal plugin so studios can create digital twins of their own facilities by entering equipment specifications or using integrated 3D scanning; future research will explore automatic twin generation from images or video.</li>
       </ul>
 
     </div>
